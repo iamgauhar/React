@@ -7,6 +7,7 @@ import About from "./Components/About"
 import Services from "./Components/Services"
 import Login from "./Components/Login"
 import NavBar from "./Components/Navbar/Navbar";
+import SingleUser from "./Components/SingleUser";
 function App() {
   return <BrowserRouter>
     <NavBar/>
@@ -16,6 +17,7 @@ function App() {
     <Route path="/contact" element={<Contact/>} />
     <Route path="/about-us" element={<About/>} />
     <Route path="/services" element={<Services/>} />
+    <Route path="/single-user/:id" element={<SingleUser/>} />
     <Route path="/login" element={<Login/>} />
   </Routes>
   </BrowserRouter>;
